@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K.B Seling | Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "poppins";
+      }
+      a {
+        color: inherit;
+        background: inherit;
+        text-decoration: none;
+      }
+      body {
+        background: rgb(209, 210, 219);
+      }
+      section {
+        margin: 2em;
+        display: flex;
+        justify-content: center;
+      }
+      section h1 {
+        font-family: "Merriweather";
+        color: rgb(7, 97, 7);
+        margin-bottom: 1em;
+      }
+      .section-div div:nth-child(2) img {
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+        padding: 0.3em;
+        border: 4px solid rgb(7, 97, 7);
+      }
+      .section-div div:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .section-div div:nth-child(2) div:nth-child(2) {
+        display: block;
+        margin-left: 3em;
+        width: 16em;
+      }
+      .section-div div:nth-child(2) div:nth-child(2) p {
+        margin-top: 1.5em;
+      }
+      .section-div h1 span {
+        color: rgb(97, 63, 126);
+        font-family: 'Rubik Moonrocks', cursive;
+        font-weight: 300;
+      }
+      .body-section {
+        display: flex;
+        justify-content: center;
+      }
+      .body-div {
+        width: 38em;
+      }
+      .body-div p:nth-child(2) {
+        color: rgb(128, 126, 126);
+        font-weight: 600;
+        margin: 1em 0;
+      }
+      .data-safety {
+        display: none;
+      }
+      .show_data_pri:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: rgb(146, 93, 23);
+      }
+      .show_data_pri {
+        color: rgb(180, 17, 87);
+      }
+      .show {
+        display: block!important;
+      }
+      .social-icon {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        margin-top: .5em;
+      }
+      .social-icon a span {
+        margin: 0 1.5em;
+      }
+      .social-icon a span {
+        font-size: 13pt;
+        padding: .5em;
+      }
+      .social-icon a:first-child span:first-child {
+        background: rgba(26, 26, 105, 0.997);
+        border-radius: .2em;
+      }
+      .social-icon a:first-child span:first-child:hover {
+        background: rgba(26, 26, 105, 0.687);
+        cursor: pointer;
+      }
+      .social-icon a:nth-child(2) span:nth-child(1) {
+        background: rgba(165, 14, 49, 0.997);
+        border-radius: .2em;
+      }
+      .social-icon a:nth-child(2) span:nth-child(1):hover {
+        background: rgba(165, 14, 49, 0.687);
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 400px) {
+        .section-div div:nth-child(2) {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section-div">
+        <h1>Kamal Seling (<span>K.B</span>)</h1>
+        <div>
+          <img src="/Image/profile-pic.webp" />
+          <div>
+            <h2>Hello! This is Kamal.</h2>
+            <p>Making and editing videos for a blog that will last forever</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="body-section">
+      <div class="body-div">
+        <h2>About Me</h2>
+        <p>
+          I make video edits for other people's personal websites, blogs, and
+          vlogs that are viewed by thousands of people.
+        </p>
+        <p>
+          You have certain activities you enjoy. There are those who accept your
+          payment. Things cross over all of these circles in different ways.
+          This is known as ikigai in Japanese, which means "reason to wake up
+          every morning." Every morning is a new adventure when you love what
+          you do so much.
+        </p>
+        <br><br>
+        <h2>About this website</h2>
+        <p>
+          Developer can shaw information here about how their website collect and 
+          uses your data.(<a class="show_data_pri" onclick="show_data_safety();">Learn more about data safety</a>)
+        </p>
+        <p class="data-safety">
+          Datas privacy and security practice may vary based on your use, region and age. The developer provide
+          this information and may update it over time.
+        </p>
+        <br><br>
+        <h2>Follow me on</h2>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/kamal.seling99" target="_blank"><span><i class="fab fa-facebook"></i> Facebook</span></a>
+          <a href="https://www.youtube.com/channel/UCIphuAyn08SR46eEB21EbWQ"><span><i class="fab fa-youtube"target="_blank"></i> Youtube</span></a>
+        </div>
+      </div>
+    </section>
+    <script>
+      function show_data_safety() {
+        document.querySelector('.data-safety').classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>
